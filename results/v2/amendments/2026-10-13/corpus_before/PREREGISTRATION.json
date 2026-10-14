@@ -1,0 +1,35 @@
+{
+  "status": "dataset frozen; controller freeze and held-out inference pending",
+  "protocol_sha256": "f2734a609b8aa113b3a6ff478de256db509159c93f7f911ba11a35cf60d7d8d9",
+  "dataset_sha256": "2786a9b8bba31ad386885d1d97d6cafc5f9b5705bafb09493550a3d2161ca456",
+  "test_templates_sha256": "1b016fd37f8f519d482579aa32e8fa7cd3c685475869b9b0e8fd5752c7d7d8f2",
+  "schema_shift_templates_sha256": "7d0e74a33b9963af2cfe9bd8e51da2adce8b7e715d927a3719e424f7bc414e05",
+  "success_tolerance": 0.1,
+  "require_lower_effort": true,
+  "require_both_fault_conditions": true,
+  "test_seeds": 10,
+  "test_trials": 3,
+  "wordings": 1,
+  "faults": [
+    "clean",
+    "transient"
+  ],
+  "headroom_small_template_fraction": [
+    0.3,
+    0.7
+  ],
+  "headroom_template_success_threshold": 0.5,
+  "validation_seeds": 10,
+  "validation_tasks": 40,
+  "penalties": [
+    0,
+    0.15,
+    0.3
+  ],
+  "thresholds": [
+    0,
+    0.1,
+    0.2
+  ],
+  "note": "V1 primary; v2 exploratory. This is not a fitted-controller FREEZE."
+}

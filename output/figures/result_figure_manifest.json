@@ -1,0 +1,12 @@
+{
+  "figures": {
+    "template_results": "All primary test records grouped by policy, condition and template; each cell has nine runs.",
+    "latency_distribution": "All primary test wall_seconds values; each policy/condition has 27 points; box is quartiles, whiskers follow 1.5 IQR.",
+    "action_evidence": "Training branch terminal labels, plus decision events in all 54 joint-controller primary test trajectories."
+  },
+  "source_sha256": {
+    "test.jsonl": "c264141f65804e069baf43d2be47d98031fdf3fe77798c421aac244b607f9a6c",
+    "branches.jsonl": "fbafe1e98025dd1ef35e0d0fffd7fc0ad1d5cf6b05f7f2370a913b3ff8274b88"
+  },
+  "note": "Plots visualise existing actual runs; no synthetic performance measurements or new model executions."
+}

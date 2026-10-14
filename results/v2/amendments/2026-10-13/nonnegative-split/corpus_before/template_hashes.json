@@ -1,0 +1,98 @@
+{
+  "average_net": {
+    "instances": 20,
+    "sha256": "4a6d7ab2c9027e2c9e810ccbbc27dd2e4dfe0ec9c2b74aadd85090413f6cb958"
+  },
+  "cancelled_ratio": {
+    "instances": 20,
+    "sha256": "6290975194230a311afcfd0cef797b10ab02182dcfbb4ead632f55d6aaebab96"
+  },
+  "completion_rate": {
+    "instances": 20,
+    "sha256": "0d91b70fd5a73e840bdc21789463acc8f00bd2cb139de00fb736351a6f4ca23d"
+  },
+  "customers_no_orders": {
+    "instances": 20,
+    "sha256": "1c2e0ebc581424fa63bb731185cf9b304e453c58720e5193b6e7e603506dd582"
+  },
+  "date_window": {
+    "instances": 20,
+    "sha256": "2831388dc6872d14c9f97d8b673f57df159f236fe8a1f2a49f991459a00c5950"
+  },
+  "discount_by_region": {
+    "instances": 20,
+    "sha256": "4e408e4d81e82443c88e8c9b04e8c42672519e042c4500f59f01451f7923d27d"
+  },
+  "discount_rate": {
+    "instances": 20,
+    "sha256": "d2c3ffab7cb3d5dc97694e90b14043bfce2050f0d70a908c8f4abf18e9a70a14"
+  },
+  "distinct_customers": {
+    "instances": 20,
+    "sha256": "d5299363c399e058b99c4eb109ddf4e01dd9ed04fe06a586c1ec3fee4c164e83"
+  },
+  "east_stock_share": {
+    "instances": 20,
+    "sha256": "4e8c20315ca7068ab09fe721deadc322a41cd824214443195c735c32ae67f98a"
+  },
+  "having_regions": {
+    "instances": 20,
+    "sha256": "bbb78b0a8f3da0197749f82877209b5dfbc1a2cbbe622423432f86d0ad09e22b"
+  },
+  "january": {
+    "instances": 20,
+    "sha256": "1aaf3c1c644f001157ec4b5f5d5e947d45a05ac8222943fb322fa553e96cdb8c"
+  },
+  "large_net": {
+    "instances": 20,
+    "sha256": "5c1c1fe1f88fc1dbe87d48c31d0d2b4a411cf19744f8bfc7349ab8f715c9fed9"
+  },
+  "low_stock_skus": {
+    "instances": 20,
+    "sha256": "41e248f7c491f024035df720c30c1612fe261eaaa6ce1dc7235ac4d4b8ab4f01"
+  },
+  "max_per_customer": {
+    "instances": 20,
+    "sha256": "a8a6e25a695a0558dbbe6c7adbccf044c377f368b1ada4214e3a6489c63f751c"
+  },
+  "missing_count": {
+    "instances": 20,
+    "sha256": "d913b18db37f3c2f49b79f96468c4e190069f6afccc45772e223800017fd3347"
+  },
+  "month_totals": {
+    "instances": 20,
+    "sha256": "3143a59b9eb5a999cb31509626f2be01ba8ec46654c9129a7954165b1d9d521b"
+  },
+  "net_total": {
+    "instances": 20,
+    "sha256": "305657059160f86d3cd4e7332595fbd9a306a5f2d0440d1ce96b4f09c33e6472"
+  },
+  "region_net": {
+    "instances": 20,
+    "sha256": "ca5bca9f157f9b8182ebe87b5b7eadeb29f24c0844f78043c068b918634a1192"
+  },
+  "region_total": {
+    "instances": 20,
+    "sha256": "74c595e56e047248200755cb330ea65518601320b83b19a372a53008013008b6"
+  },
+  "stock_value": {
+    "instances": 20,
+    "sha256": "91e67ae9fd73b53184b801f239e0f602cf99e99990ea1b770f16a44c9822ca87"
+  },
+  "summary": {
+    "instances": 20,
+    "sha256": "dcc462d74de8f03a601b88a730668ef9339856d69977ee6f4c30f0810b9ce26f"
+  },
+  "top_regions": {
+    "instances": 20,
+    "sha256": "076e43154b3bb416762a09ab6265938fbd05c33f406d4481c1235b57b70e451c"
+  },
+  "top_stock_products": {
+    "instances": 20,
+    "sha256": "081ca9812b73876926ab273077f04ddd2d89b488ee95712979e7ca08afaf094b"
+  },
+  "weighted_net": {
+    "instances": 20,
+    "sha256": "a8059191ea675b5b458e64b1e7aed9b60ce1357409e258df0347aedf28988329"
+  }
+}

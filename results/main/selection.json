@@ -1,0 +1,28 @@
+{
+  "selected_penalty": 0.3,
+  "validation_large_success": 0.6666666666666666,
+  "selection_rule": "lowest validation effort within 10 percentage points of stronger-model point success; otherwise highest success, then lowest effort",
+  "candidates": [
+    {
+      "penalty": 0.0,
+      "success": 0.3333333333333333,
+      "effort": 3.024951985880295
+    },
+    {
+      "penalty": 0.05,
+      "success": 0.3333333333333333,
+      "effort": 1.2626351247862637
+    },
+    {
+      "penalty": 0.15,
+      "success": 0.3333333333333333,
+      "effort": 0.6205753099974064
+    },
+    {
+      "penalty": 0.3,
+      "success": 0.3333333333333333,
+      "effort": 0.6129012084408035
+    }
+  ],
+  "note": "This operating-point rule is not a statistical equivalence test."
+}

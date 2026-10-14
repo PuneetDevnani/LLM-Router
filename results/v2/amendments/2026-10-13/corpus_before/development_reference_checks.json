@@ -1,0 +1,131 @@
+{
+  "scope": "training and validation reference SQL only; no model calls or held-out verifier evaluation",
+  "dataset_sha256": "2786a9b8bba31ad386885d1d97d6cafc5f9b5705bafb09493550a3d2161ca456",
+  "reference_sql_strings": 12,
+  "per_verifier": {
+    "original": {
+      "net_total": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "january": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "region_total": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "region_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "average_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "missing_count": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "completion_rate": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "large_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "date_window": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "distinct_customers": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "discount_rate": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "summary": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      }
+    },
+    "contract_v2": {
+      "net_total": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "january": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "region_total": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "region_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "average_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "missing_count": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "completion_rate": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "large_net": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "date_window": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "distinct_customers": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "discount_rate": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      },
+      "summary": {
+        "runs": 10,
+        "correct": 10,
+        "flagged": 0
+      }
+    }
+  }
+}

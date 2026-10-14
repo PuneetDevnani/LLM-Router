@@ -1,0 +1,79 @@
+{
+  "corpus_version": "v2",
+  "groups": {
+    "train": [
+      "net_total",
+      "january",
+      "region_total",
+      "region_net",
+      "average_net",
+      "missing_count",
+      "completion_rate",
+      "large_net"
+    ],
+    "validation": [
+      "date_window",
+      "distinct_customers",
+      "discount_rate",
+      "summary"
+    ],
+    "test": [
+      "top_regions",
+      "cancelled_ratio",
+      "customers_no_orders",
+      "discount_by_region",
+      "month_totals",
+      "having_regions",
+      "max_per_customer",
+      "weighted_net"
+    ],
+    "schema_shift": [
+      "stock_value",
+      "low_stock_skus",
+      "top_stock_products",
+      "east_stock_share"
+    ]
+  },
+  "test_templates": [
+    "cancelled_ratio",
+    "customers_no_orders",
+    "discount_by_region",
+    "having_regions",
+    "max_per_customer",
+    "month_totals",
+    "top_regions",
+    "weighted_net"
+  ],
+  "test_templates_sha256": "1b016fd37f8f519d482579aa32e8fa7cd3c685475869b9b0e8fd5752c7d7d8f2",
+  "max_calls": 3,
+  "max_tool_operations": 6,
+  "context": 4096,
+  "formatter": "deterministic declared output schema",
+  "wording_variants": 2,
+  "verifier": "original",
+  "initial_model": "small",
+  "small_model": "qwen3:0.6b",
+  "large_model": "qwen3:1.7b",
+  "fresh_escalation": false,
+  "neutral_feedback": false,
+  "diversify_seed": false,
+  "evidence_status": "post-hoc exploratory; original template families already inspected",
+  "default_decoding": {
+    "temperature": 0.2,
+    "num_predict": 384,
+    "seed_rule": "trial"
+  },
+  "dataset_sha256": "8338ee27ac002bdb7aac3648cd152d48dfece3ffeb1fbf466b8b41aee4a55eee",
+  "schema_shift_templates": [
+    "east_stock_share",
+    "low_stock_skus",
+    "stock_value",
+    "top_stock_products"
+  ],
+  "schema_shift_templates_sha256": "7d0e74a33b9963af2cfe9bd8e51da2adce8b7e715d927a3719e424f7bc414e05",
+  "corpus_source_sha256": "d74664a6f43768222255b111b9d512049acb163680f3dd75310ffa9fb87bbd47",
+  "amendment_date": "2026-10-13",
+  "generation_cache": false,
+  "cache_directory": null,
+  "template_definitions_sha256": "58ff3a2deb69a8c732d77767556b86ff7c81d899212fa8cd80cfb3355b440361"
+}

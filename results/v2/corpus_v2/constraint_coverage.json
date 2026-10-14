@@ -1,0 +1,198 @@
+{
+  "month_totals": {
+    "window": {
+      "seeds": 10,
+      "changed_answers": 10,
+      "fraction": 1.0,
+      "sql": "SELECT substr(order_date,1,7),SUM(amount) FROM orders WHERE status='completed' GROUP BY substr(order_date,1,7)",
+      "cases": [
+        {
+          "seed": 0,
+          "changes_answer": true
+        },
+        {
+          "seed": 1,
+          "changes_answer": true
+        },
+        {
+          "seed": 2,
+          "changes_answer": true
+        },
+        {
+          "seed": 3,
+          "changes_answer": true
+        },
+        {
+          "seed": 4,
+          "changes_answer": true
+        },
+        {
+          "seed": 5,
+          "changes_answer": true
+        },
+        {
+          "seed": 6,
+          "changes_answer": true
+        },
+        {
+          "seed": 7,
+          "changes_answer": true
+        },
+        {
+          "seed": 8,
+          "changes_answer": true
+        },
+        {
+          "seed": 9,
+          "changes_answer": true
+        }
+      ]
+    },
+    "start": {
+      "seeds": 10,
+      "changed_answers": 10,
+      "fraction": 1.0,
+      "sql": "SELECT substr(order_date,1,7),SUM(amount) FROM orders WHERE status='completed' AND order_date<'2026-02-20' GROUP BY substr(order_date,1,7)",
+      "cases": [
+        {
+          "seed": 0,
+          "changes_answer": true
+        },
+        {
+          "seed": 1,
+          "changes_answer": true
+        },
+        {
+          "seed": 2,
+          "changes_answer": true
+        },
+        {
+          "seed": 3,
+          "changes_answer": true
+        },
+        {
+          "seed": 4,
+          "changes_answer": true
+        },
+        {
+          "seed": 5,
+          "changes_answer": true
+        },
+        {
+          "seed": 6,
+          "changes_answer": true
+        },
+        {
+          "seed": 7,
+          "changes_answer": true
+        },
+        {
+          "seed": 8,
+          "changes_answer": true
+        },
+        {
+          "seed": 9,
+          "changes_answer": true
+        }
+      ]
+    },
+    "end": {
+      "seeds": 10,
+      "changed_answers": 10,
+      "fraction": 1.0,
+      "sql": "SELECT substr(order_date,1,7),SUM(amount) FROM orders WHERE status='completed' AND order_date>='2026-01-10' GROUP BY substr(order_date,1,7)",
+      "cases": [
+        {
+          "seed": 0,
+          "changes_answer": true
+        },
+        {
+          "seed": 1,
+          "changes_answer": true
+        },
+        {
+          "seed": 2,
+          "changes_answer": true
+        },
+        {
+          "seed": 3,
+          "changes_answer": true
+        },
+        {
+          "seed": 4,
+          "changes_answer": true
+        },
+        {
+          "seed": 5,
+          "changes_answer": true
+        },
+        {
+          "seed": 6,
+          "changes_answer": true
+        },
+        {
+          "seed": 7,
+          "changes_answer": true
+        },
+        {
+          "seed": 8,
+          "changes_answer": true
+        },
+        {
+          "seed": 9,
+          "changes_answer": true
+        }
+      ]
+    }
+  },
+  "having_regions": {
+    "having": {
+      "seeds": 10,
+      "changed_answers": 10,
+      "fraction": 1.0,
+      "sql": "SELECT c.region,COUNT(*) FROM orders o JOIN customers c ON c.id=o.customer_id WHERE o.status='completed' GROUP BY c.region",
+      "cases": [
+        {
+          "seed": 0,
+          "changes_answer": true
+        },
+        {
+          "seed": 1,
+          "changes_answer": true
+        },
+        {
+          "seed": 2,
+          "changes_answer": true
+        },
+        {
+          "seed": 3,
+          "changes_answer": true
+        },
+        {
+          "seed": 4,
+          "changes_answer": true
+        },
+        {
+          "seed": 5,
+          "changes_answer": true
+        },
+        {
+          "seed": 6,
+          "changes_answer": true
+        },
+        {
+          "seed": 7,
+          "changes_answer": true
+        },
+        {
+          "seed": 8,
+          "changes_answer": true
+        },
+        {
+          "seed": 9,
+          "changes_answer": true
+        }
+      ]
+    }
+  }
+}

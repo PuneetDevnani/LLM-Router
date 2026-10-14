@@ -1,0 +1,73 @@
+{
+  "status": "pre-inference amended dataset; new development inference and final controller freeze pending",
+  "protocol_sha256": "03338dc11b7bf0510d809570667a5039dfc991b6e1fa933cda97a9dcec1749a6",
+  "dataset_sha256": "8338ee27ac002bdb7aac3648cd152d48dfece3ffeb1fbf466b8b41aee4a55eee",
+  "test_templates_sha256": "1b016fd37f8f519d482579aa32e8fa7cd3c685475869b9b0e8fd5752c7d7d8f2",
+  "schema_shift_templates_sha256": "7d0e74a33b9963af2cfe9bd8e51da2adce8b7e715d927a3719e424f7bc414e05",
+  "success_tolerance": 0.1,
+  "require_lower_effort": true,
+  "require_both_fault_conditions": true,
+  "test_seeds": 10,
+  "test_trials": 3,
+  "wordings": 1,
+  "faults": [
+    "clean",
+    "transient"
+  ],
+  "headroom_small_template_fraction": [
+    0.3,
+    0.7
+  ],
+  "headroom_template_success_threshold": 0.5,
+  "validation_seeds": 10,
+  "validation_tasks": 40,
+  "penalties": [
+    0,
+    0.15,
+    0.3
+  ],
+  "thresholds": [
+    0,
+    0.1,
+    0.2
+  ],
+  "note": "V1 primary; v2 exploratory. Older development profiles predate the amended contracts and cannot be resumed or pooled. No fresh held-out inference has started.",
+  "amendment_date": "2026-10-13",
+  "previous_dataset_sha256": "2786a9b8bba31ad386885d1d97d6cafc5f9b5705bafb09493550a3d2161ca456",
+  "previous_protocol_sha256": "f2734a609b8aa113b3a6ff478de256db509159c93f7f911ba11a35cf60d7d8d9",
+  "corpus_source_sha256": "d74664a6f43768222255b111b9d512049acb163680f3dd75310ffa9fb87bbd47",
+  "template_definitions_sha256": "58ff3a2deb69a8c732d77767556b86ff7c81d899212fa8cd80cfb3355b440361",
+  "amendments": [
+    "explicit net-value guard and all-template reference checks",
+    "non-vacuous monthly window and HAVING threshold",
+    "opt-in exact-body generation cache with recorded usage",
+    "replayed-effort, live sample, trajectory counts and template-level criterion",
+    "development-designed boundary, cancelled-NULL and discount-irrelevance probes"
+  ],
+  "probe_design_sha256": "52c9e0c512df99571a5b13ce242278f3639f574df63fe9a0837454428fdefc8d",
+  "generation_cache": {
+    "opt_in": true,
+    "default": false,
+    "workflow_enabled": true,
+    "key": "sha256(json.dumps(request_body).encode())",
+    "accounting": "Recorded load, prompt and generation durations charged on hits and misses; live tools and probes measured."
+  },
+  "live_rerun_sample": {
+    "split": "development only",
+    "tasks": 10,
+    "models": 2,
+    "requests": 20,
+    "trial": 0,
+    "timing_task_selection": "study.headroom.timing_tasks",
+    "cache_bypassed": true,
+    "no_adaptation_to_sample": true
+  },
+  "trajectory_counts": {
+    "primary": 4320,
+    "schema_shift": 2160,
+    "oracle_jobs": 720,
+    "oracle_candidate_trajectories": 1440,
+    "total_candidate_trajectories": 7920
+  },
+  "preregistration_sha256": "36401760cc0fda3d42c4de243fab4fb2e5abfb455073b01994286cf8f4a89ec6"
+}

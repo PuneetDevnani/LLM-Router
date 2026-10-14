@@ -1,0 +1,72 @@
+[
+  {
+    "number": 15,
+    "authors": "Lei Wang et al.",
+    "title": "A survey on large language model based autonomous agents",
+    "venue": "Frontiers of Computer Science, 18, 186345, 2024",
+    "url": "https://doi.org/10.1007/s11704-024-40231-1"
+  },
+  {
+    "number": 16,
+    "authors": "Weikai Xu, Chengrui Huang, Shen Gao, and Shuo Shang",
+    "title": "LLM-Based Agents for Tool Learning: A Survey",
+    "venue": "Data Science and Engineering, 10, pp. 533-563, 2025",
+    "url": "https://doi.org/10.1007/s41019-025-00296-9"
+  },
+  {
+    "number": 17,
+    "authors": "George Katsogiannis-Meimarakis and Georgia Koutrika",
+    "title": "A survey on deep learning approaches for text-to-SQL",
+    "venue": "The VLDB Journal, 32, pp. 905-936, 2023",
+    "url": "https://doi.org/10.1007/s00778-022-00776-8"
+  },
+  {
+    "number": 18,
+    "authors": "Sadia Sultana Chowa et al.",
+    "title": "From language to action: a review of large language models as autonomous agents and tool users",
+    "venue": "Artificial Intelligence Review, 59, 71, 2026",
+    "url": "https://doi.org/10.1007/s10462-025-11471-9"
+  },
+  {
+    "number": 19,
+    "authors": "Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, and Yarin Gal",
+    "title": "Detecting hallucinations in large language models using semantic entropy",
+    "venue": "Nature, 630, pp. 625-630, 2024",
+    "url": "https://doi.org/10.1038/s41586-024-07421-0"
+  },
+  {
+    "number": 20,
+    "authors": "Shunyu Yao et al.",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "venue": "ICLR, 2023",
+    "url": "https://arxiv.org/abs/2210.03629"
+  },
+  {
+    "number": 21,
+    "authors": "Timo Schick et al.",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "venue": "NeurIPS, 36, 2023",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/d842425e4bf79ba039352da0f658a906-Abstract-Conference.html"
+  },
+  {
+    "number": 22,
+    "authors": "Noah Shinn et al.",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "venue": "NeurIPS, 36, 2023",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf"
+  },
+  {
+    "number": 23,
+    "authors": "Murong Yue, Jie Zhao, Min Zhang, Liang Du, and Ziyu Yao",
+    "title": "Large Language Model Cascades with Mixture of Thought Representations for Cost-Efficient Reasoning",
+    "venue": "ICLR, 2024",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/5de11e930c1bbfda5d4fc9d2b0924032-Paper-Conference.pdf"
+  },
+  {
+    "number": 24,
+    "authors": "Tao Yu et al.",
+    "title": "Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task",
+    "venue": "EMNLP, pp. 3911-3921, 2018",
+    "url": "https://aclanthology.org/D18-1425/"
+  }
+]

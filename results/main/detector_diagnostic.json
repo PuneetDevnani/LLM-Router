@@ -1,0 +1,441 @@
+{
+  "scope": "clean initial training states with executable, structurally formattable outputs; development diagnostic only",
+  "counts": {
+    "true_positive": 0,
+    "false_positive": 0,
+    "true_negative": 0,
+    "false_negative": 16
+  },
+  "precision": null,
+  "recall": 0.0,
+  "details": [
+    {
+      "task_id": "completion_rate-0-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [],
+        "seconds": 7.291033398360014e-06,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "completion_rate-3-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [],
+        "seconds": 5.125009920448065e-06,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "net_total-2-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  305300
+                ]
+              ]
+            }
+          },
+          {
+            "check": "zero_missing_discount",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  305300
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0013404579949565232,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "missing_count-0-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "missing"
+              ],
+              "rows": [
+                [
+                  18
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0004605409922078252,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "date_window-3-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "COUNT(*)"
+              ],
+              "rows": [
+                [
+                  14
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.00046187505358830094,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "completion_rate-1-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [],
+        "seconds": 2.6659690774977207e-06,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "missing_count-1-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "missing"
+              ],
+              "rows": [
+                [
+                  18
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.00043637497583404183,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "net_total-3-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  326500
+                ]
+              ]
+            }
+          },
+          {
+            "check": "zero_missing_discount",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  326500
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0008739579934626818,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "net_total-1-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  305900
+                ]
+              ]
+            }
+          },
+          {
+            "check": "zero_missing_discount",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  305900
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0008572080405429006,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "date_window-1-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "COUNT(*)"
+              ],
+              "rows": [
+                [
+                  14
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.00043937499867752194,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "missing_count-2-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "missing"
+              ],
+              "rows": [
+                [
+                  18
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0004249580088071525,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "completion_rate-2-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [],
+        "seconds": 2.4579931050539017e-06,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "missing_count-3-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "missing"
+              ],
+              "rows": [
+                [
+                  18
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0004267499898560345,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "date_window-0-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "COUNT(*)"
+              ],
+              "rows": [
+                [
+                  14
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.00043474999256432056,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "net_total-0-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  287300
+                ]
+              ]
+            }
+          },
+          {
+            "check": "zero_missing_discount",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "net_total"
+              ],
+              "rows": [
+                [
+                  287300
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0008548329933546484,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    },
+    {
+      "task_id": "date_window-2-w0",
+      "incorrect": true,
+      "flagged": false,
+      "checks": {
+        "flagged": false,
+        "evidence": [
+          {
+            "check": "add_cancelled",
+            "status": "consistent",
+            "transformed_result": {
+              "columns": [
+                "COUNT(*)"
+              ],
+              "rows": [
+                [
+                  14
+                ]
+              ]
+            }
+          }
+        ],
+        "seconds": 0.0004419999895617366,
+        "interpretation": "Passing these checks does not establish correctness.",
+        "concerns": []
+      }
+    }
+  ]
+}

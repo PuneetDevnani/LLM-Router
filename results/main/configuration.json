@@ -1,0 +1,32 @@
+{
+  "groups": {
+    "train": [
+      "net_total",
+      "date_window",
+      "region_total",
+      "average_net",
+      "missing_count",
+      "completion_rate"
+    ],
+    "validation": [
+      "distinct_customers",
+      "discount_rate",
+      "summary"
+    ],
+    "test": [
+      "january",
+      "region_net",
+      "large_net"
+    ]
+  },
+  "max_calls": 3,
+  "max_tool_operations": 6,
+  "context": 4096,
+  "formatter": "deterministic declared output schema",
+  "wording_variants": 2,
+  "default_decoding": {
+    "temperature": 0.2,
+    "num_predict": 384
+  },
+  "dataset_sha256": "c84e3559d8b8c456e00d9ea2717ae7b6c984dc699e87222f12bdca45e7621758"
+}

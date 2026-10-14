@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "design": [
+    "average_expression",
+    "count_expression",
+    "distinct_subquery",
+    "join_predicate",
+    "null_function",
+    "omitted_discount",
+    "omitted_status_filter",
+    "reference",
+    "status_predicate",
+    "truncated_date_window"
+  ],
+  "evaluation": [
+    "conditional_count",
+    "count_nullable_column",
+    "group_order",
+    "missing_distinct",
+    "numeric_bias",
+    "omitted_null_handling",
+    "ratio_scale",
+    "reversed_null_filter",
+    "subquery_wrapper",
+    "wrong_aggregation"
+  ],
+  "sha256": "a04908f76c339b505cf48f89277d922d51d6712f5d1fbdde5fd7c40a14d34041",
+  "allocation": "Alphabetically sorted existing families, alternating design/evaluation; no outcome-based selection.",
+  "evidence_status": "Retrospective split: all existing family outcomes were previously observed. Fixed now for future verifier changes, not a new unseen evaluation dataset."
+}

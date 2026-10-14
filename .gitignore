@@ -1,0 +1,19 @@
+__pycache__/
+.DS_Store
+tmp/
+results/
+.venv/
+.models/
+literature/sources/
+.analysisdeps/
+output/qa/
+
+# Academic documents remain local.
+Dissertation Format/
+M.Tech*
+documents/
+author_details.json
+output/dissertation/
+output/paper/
+output/*.zip
+results/v2/report/

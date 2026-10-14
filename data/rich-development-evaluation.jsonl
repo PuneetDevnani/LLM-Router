@@ -1,0 +1,72 @@
+{"id": "dev-000", "template": "net_total", "expected": {"net_total": 279300}}
+{"id": "dev-001", "template": "january", "expected": {"january": 146000}}
+{"id": "dev-002", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-003", "template": "region_total", "expected": {"regions": {"north": 87400, "south": 84500, "west": 115400}}}
+{"id": "dev-004", "template": "region_net", "expected": {"regions": {"north": 84800, "south": 81300, "west": 113200}}}
+{"id": "dev-005", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-006", "template": "average_net", "expected": {"average_net": 4815.517241379311}}
+{"id": "dev-007", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-008", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-009", "template": "discount_rate", "expected": {"percentage": 51.724137931034484}}
+{"id": "dev-010", "template": "large_net", "expected": {"count": 25}}
+{"id": "dev-011", "template": "summary", "expected": {"count": 29, "total": 146000}}
+{"id": "dev-012", "template": "net_total", "expected": {"net_total": 296500}}
+{"id": "dev-013", "template": "january", "expected": {"january": 157500}}
+{"id": "dev-014", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-015", "template": "region_total", "expected": {"regions": {"north": 95600, "south": 77300, "west": 133000}}}
+{"id": "dev-016", "template": "region_net", "expected": {"regions": {"north": 94000, "south": 74000, "west": 128500}}}
+{"id": "dev-017", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-018", "template": "average_net", "expected": {"average_net": 5112.068965517241}}
+{"id": "dev-019", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-020", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-021", "template": "discount_rate", "expected": {"percentage": 55.172413793103445}}
+{"id": "dev-022", "template": "large_net", "expected": {"count": 29}}
+{"id": "dev-023", "template": "summary", "expected": {"count": 29, "total": 157500}}
+{"id": "dev-024", "template": "net_total", "expected": {"net_total": 296900}}
+{"id": "dev-025", "template": "january", "expected": {"january": 156500}}
+{"id": "dev-026", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-027", "template": "region_total", "expected": {"regions": {"north": 90500, "south": 67000, "west": 147800}}}
+{"id": "dev-028", "template": "region_net", "expected": {"regions": {"north": 89300, "south": 64500, "west": 143100}}}
+{"id": "dev-029", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-030", "template": "average_net", "expected": {"average_net": 5118.9655172413795}}
+{"id": "dev-031", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-032", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-033", "template": "discount_rate", "expected": {"percentage": 56.89655172413793}}
+{"id": "dev-034", "template": "large_net", "expected": {"count": 29}}
+{"id": "dev-035", "template": "summary", "expected": {"count": 29, "total": 156500}}
+{"id": "dev-036", "template": "net_total", "expected": {"net_total": 317900}}
+{"id": "dev-037", "template": "january", "expected": {"january": 145800}}
+{"id": "dev-038", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-039", "template": "region_total", "expected": {"regions": {"north": 86500, "south": 133100, "west": 107300}}}
+{"id": "dev-040", "template": "region_net", "expected": {"regions": {"north": 84200, "south": 129300, "west": 104400}}}
+{"id": "dev-041", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-042", "template": "average_net", "expected": {"average_net": 5481.0344827586205}}
+{"id": "dev-043", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-044", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-045", "template": "discount_rate", "expected": {"percentage": 60.3448275862069}}
+{"id": "dev-046", "template": "large_net", "expected": {"count": 33}}
+{"id": "dev-047", "template": "summary", "expected": {"count": 29, "total": 145800}}
+{"id": "dev-048", "template": "net_total", "expected": {"net_total": 278000}}
+{"id": "dev-049", "template": "january", "expected": {"january": 158200}}
+{"id": "dev-050", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-051", "template": "region_total", "expected": {"regions": {"north": 104600, "south": 104300, "west": 76400}}}
+{"id": "dev-052", "template": "region_net", "expected": {"regions": {"north": 102200, "south": 102500, "west": 73300}}}
+{"id": "dev-053", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-054", "template": "average_net", "expected": {"average_net": 4793.103448275862}}
+{"id": "dev-055", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-056", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-057", "template": "discount_rate", "expected": {"percentage": 60.3448275862069}}
+{"id": "dev-058", "template": "large_net", "expected": {"count": 26}}
+{"id": "dev-059", "template": "summary", "expected": {"count": 29, "total": 158200}}
+{"id": "dev-060", "template": "net_total", "expected": {"net_total": 291100}}
+{"id": "dev-061", "template": "january", "expected": {"january": 158800}}
+{"id": "dev-062", "template": "date_window", "expected": {"count": 11}}
+{"id": "dev-063", "template": "region_total", "expected": {"regions": {"north": 103200, "south": 105200, "west": 90400}}}
+{"id": "dev-064", "template": "region_net", "expected": {"regions": {"north": 100900, "south": 103000, "west": 87200}}}
+{"id": "dev-065", "template": "distinct_customers", "expected": {"customers": 12}}
+{"id": "dev-066", "template": "average_net", "expected": {"average_net": 5018.9655172413795}}
+{"id": "dev-067", "template": "missing_count", "expected": {"missing": 15}}
+{"id": "dev-068", "template": "completion_rate", "expected": {"percentage": 80.55555555555556}}
+{"id": "dev-069", "template": "discount_rate", "expected": {"percentage": 60.3448275862069}}
+{"id": "dev-070", "template": "large_net", "expected": {"count": 28}}
+{"id": "dev-071", "template": "summary", "expected": {"count": 29, "total": 158800}}

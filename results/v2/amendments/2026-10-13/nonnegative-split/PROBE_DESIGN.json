@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-13",
+  "scope": "Verifier design uses train/validation requests and contracts only; reference fixture checks may cover all authored templates. No revised model inference or held-out inference has begun.",
+  "probes": {
+    "boundary_records": "For public date windows insert completed records immediately before start and at exclusive end; require output invariance. For ungrouped net-count with public monetary threshold insert one below and one at threshold; expect count +1.",
+    "cancelled_null_discount": "For excludes_cancelled contracts insert cancelled rows with NULL discount; require invariance.",
+    "discount_irrelevance": "Only if human-authored discount_irrelevant is true, change non-NULL discount values while preserving missingness; require invariance.",
+    "nonnegative": "Only on optional human-authored nonnegative=true contracts; numeric report values >=0, exclude group labels, empty/NULL inconclusive. Two negative-result design forms on net_total and region_total only. No adaptation to evaluation outcomes."
+  },
+  "family_partition": "study/mutation_family_split.json; existing allocation retained. Evaluation families are retrospective, not a fresh unseen holdout.",
+  "no_adjustment_after_evaluation": true,
+  "amendment_revision": "nonnegative-split",
+  "sha256": "779631b76e5a4fc2e87f057ea01a9025af77fa0a0b6a58b03aa27b3827ea2b52"
+}

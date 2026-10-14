@@ -1,0 +1,795 @@
+{
+  "scope": "paired development observations only; no model calls",
+  "interpretation": {
+    "oracle_pre_routing": "Finite-sample hindsight upper bound on correctness from these two recorded candidates; choose the cheaper correct candidate, or cheaper candidate when both fail. No deployable router or free acquisition of oracle labels.",
+    "small_first_perfect_detector": "Optimistic zero-cost perfect detector: charge small on every task, then the recorded fresh-large cost on small failures. Same union correctness as the oracle, without anchoring. No measured detector/recovery benefit.",
+    "effort": "Recorded charged effort, including serving/loading costs; offline recombination cannot predict different serving orders.",
+    "effort_per_success": "Total charged effort divided by correct outcomes, including expenditure on failed tasks; null when none succeed."
+  },
+  "models": {
+    "qwen3:1.7b": {
+      "runs": 120,
+      "successes": 50,
+      "success_rate": 0.4166666666666667,
+      "total_effort_seconds": 170.7083864931612,
+      "mean_effort_seconds": 1.4225698874430102,
+      "effort_per_success_seconds": 3.4141677298632245,
+      "mean_model_calls": 1.0
+    },
+    "qwen3:4b-q4_K_M": {
+      "runs": 120,
+      "successes": 100,
+      "success_rate": 0.8333333333333334,
+      "total_effort_seconds": 633.0647289620969,
+      "mean_effort_seconds": 5.275539408017474,
+      "effort_per_success_seconds": 6.330647289620969,
+      "mean_model_calls": 1.0
+    }
+  },
+  "policies": {
+    "always_small": {
+      "runs": 120,
+      "successes": 50,
+      "success_rate": 0.4166666666666667,
+      "total_effort_seconds": 170.7083864931612,
+      "mean_effort_seconds": 1.4225698874430102,
+      "effort_per_success_seconds": 3.4141677298632245,
+      "mean_model_calls": 1.0
+    },
+    "always_large": {
+      "runs": 120,
+      "successes": 100,
+      "success_rate": 0.8333333333333334,
+      "total_effort_seconds": 633.0647289620969,
+      "mean_effort_seconds": 5.275539408017474,
+      "effort_per_success_seconds": 6.330647289620969,
+      "mean_model_calls": 1.0
+    },
+    "oracle_pre_routing": {
+      "runs": 120,
+      "successes": 110,
+      "success_rate": 0.9166666666666666,
+      "total_effort_seconds": 396.7826492913405,
+      "mean_effort_seconds": 3.306522077427837,
+      "effort_per_success_seconds": 3.6071149935576408,
+      "mean_model_calls": 1.0
+    },
+    "small_first_perfect_detector": {
+      "runs": 120,
+      "successes": 110,
+      "success_rate": 0.9166666666666666,
+      "total_effort_seconds": 557.7568275373195,
+      "mean_effort_seconds": 4.6479735628109955,
+      "effort_per_success_seconds": 5.070516613975632,
+      "mean_model_calls": 1.5833333333333333
+    }
+  },
+  "per_template": {
+    "average_net": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 9.74966974495842,
+          "mean_effort_seconds": 0.9749669744958419,
+          "effort_per_success_seconds": 0.9749669744958419,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 38.260142374042005,
+          "mean_effort_seconds": 3.8260142374042005,
+          "effort_per_success_seconds": 3.8260142374042005,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 9.74966974495842,
+          "mean_effort_seconds": 0.9749669744958419,
+          "effort_per_success_seconds": 0.9749669744958419,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 38.260142374042005,
+          "mean_effort_seconds": 3.8260142374042005,
+          "effort_per_success_seconds": 3.8260142374042005,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 9.74966974495842,
+          "mean_effort_seconds": 0.9749669744958419,
+          "effort_per_success_seconds": 0.9749669744958419,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 9.74966974495842,
+          "mean_effort_seconds": 0.9749669744958419,
+          "effort_per_success_seconds": 0.9749669744958419,
+          "mean_model_calls": 1.0
+        }
+      }
+    },
+    "completion_rate": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 10.36747283105469,
+          "mean_effort_seconds": 1.036747283105469,
+          "effort_per_success_seconds": 1.036747283105469,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 41.793454212005955,
+          "mean_effort_seconds": 4.179345421200596,
+          "effort_per_success_seconds": 4.179345421200596,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 10.36747283105469,
+          "mean_effort_seconds": 1.036747283105469,
+          "effort_per_success_seconds": 1.036747283105469,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 41.793454212005955,
+          "mean_effort_seconds": 4.179345421200596,
+          "effort_per_success_seconds": 4.179345421200596,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 10.36747283105469,
+          "mean_effort_seconds": 1.036747283105469,
+          "effort_per_success_seconds": 1.036747283105469,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 10.36747283105469,
+          "mean_effort_seconds": 1.036747283105469,
+          "effort_per_success_seconds": 1.036747283105469,
+          "mean_model_calls": 1.0
+        }
+      }
+    },
+    "date_window": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 4,
+          "success_rate": 0.4,
+          "total_effort_seconds": 15.914766543013233,
+          "mean_effort_seconds": 1.5914766543013232,
+          "effort_per_success_seconds": 3.978691635753308,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 74.21657237203037,
+          "mean_effort_seconds": 7.421657237203037,
+          "effort_per_success_seconds": 7.421657237203037,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 4,
+          "success_rate": 0.4,
+          "total_effort_seconds": 15.914766543013233,
+          "mean_effort_seconds": 1.5914766543013232,
+          "effort_per_success_seconds": 3.978691635753308,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 74.21657237203037,
+          "mean_effort_seconds": 7.421657237203037,
+          "effort_per_success_seconds": 7.421657237203037,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 40.799560290981624,
+          "mean_effort_seconds": 4.079956029098162,
+          "effort_per_success_seconds": 4.079956029098162,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 46.14937570901808,
+          "mean_effort_seconds": 4.614937570901808,
+          "effort_per_success_seconds": 4.614937570901808,
+          "mean_model_calls": 1.6
+        }
+      }
+    },
+    "discount_rate": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 18.212115248018314,
+          "mean_effort_seconds": 1.8212115248018315,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 69.64188312399233,
+          "mean_effort_seconds": 6.964188312399233,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 18.212115248018314,
+          "mean_effort_seconds": 1.8212115248018315,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 69.64188312399233,
+          "mean_effort_seconds": 6.964188312399233,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 18.212115248018314,
+          "mean_effort_seconds": 1.8212115248018315,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 87.85399837201064,
+          "mean_effort_seconds": 8.785399837201064,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 2.0
+        }
+      }
+    },
+    "distinct_customers": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 13.302875669023512,
+          "mean_effort_seconds": 1.3302875669023513,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 43.82384737816744,
+          "mean_effort_seconds": 4.382384737816745,
+          "effort_per_success_seconds": 4.382384737816745,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 13.302875669023512,
+          "mean_effort_seconds": 1.3302875669023513,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 43.82384737816744,
+          "mean_effort_seconds": 4.382384737816745,
+          "effort_per_success_seconds": 4.382384737816745,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 43.82384737816744,
+          "mean_effort_seconds": 4.382384737816745,
+          "effort_per_success_seconds": 4.382384737816745,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 57.12672304719096,
+          "mean_effort_seconds": 5.712672304719096,
+          "effort_per_success_seconds": 5.712672304719096,
+          "mean_model_calls": 2.0
+        }
+      }
+    },
+    "january": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 3,
+          "success_rate": 0.3,
+          "total_effort_seconds": 13.545850832073866,
+          "mean_effort_seconds": 1.3545850832073865,
+          "effort_per_success_seconds": 4.515283610691289,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 44.032011418957666,
+          "mean_effort_seconds": 4.403201141895766,
+          "effort_per_success_seconds": 4.403201141895766,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 3,
+          "success_rate": 0.3,
+          "total_effort_seconds": 13.545850832073866,
+          "mean_effort_seconds": 1.3545850832073865,
+          "effort_per_success_seconds": 4.515283610691289,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 44.032011418957666,
+          "mean_effort_seconds": 4.403201141895766,
+          "effort_per_success_seconds": 4.403201141895766,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 36.060124711009436,
+          "mean_effort_seconds": 3.606012471100944,
+          "effort_per_success_seconds": 3.606012471100944,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 46.878016084058935,
+          "mean_effort_seconds": 4.687801608405893,
+          "effort_per_success_seconds": 4.687801608405893,
+          "mean_model_calls": 1.7
+        }
+      }
+    },
+    "large_net": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 11.96350021202471,
+          "mean_effort_seconds": 1.1963500212024711,
+          "effort_per_success_seconds": 1.1963500212024711,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 51.305375708967816,
+          "mean_effort_seconds": 5.130537570896782,
+          "effort_per_success_seconds": 5.130537570896782,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 11.96350021202471,
+          "mean_effort_seconds": 1.1963500212024711,
+          "effort_per_success_seconds": 1.1963500212024711,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 51.305375708967816,
+          "mean_effort_seconds": 5.130537570896782,
+          "effort_per_success_seconds": 5.130537570896782,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 11.96350021202471,
+          "mean_effort_seconds": 1.1963500212024711,
+          "effort_per_success_seconds": 1.1963500212024711,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 11.96350021202471,
+          "mean_effort_seconds": 1.1963500212024711,
+          "effort_per_success_seconds": 1.1963500212024711,
+          "mean_model_calls": 1.0
+        }
+      }
+    },
+    "missing_count": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 7.252411457999616,
+          "mean_effort_seconds": 0.7252411457999617,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 38.19377995804299,
+          "mean_effort_seconds": 3.819377995804299,
+          "effort_per_success_seconds": 3.819377995804299,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 7.252411457999616,
+          "mean_effort_seconds": 0.7252411457999617,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 38.19377995804299,
+          "mean_effort_seconds": 3.819377995804299,
+          "effort_per_success_seconds": 3.819377995804299,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 38.19377995804299,
+          "mean_effort_seconds": 3.819377995804299,
+          "effort_per_success_seconds": 3.819377995804299,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 45.4461914160426,
+          "mean_effort_seconds": 4.54461914160426,
+          "effort_per_success_seconds": 4.54461914160426,
+          "mean_model_calls": 2.0
+        }
+      }
+    },
+    "net_total": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 12.356376710082113,
+          "mean_effort_seconds": 1.2356376710082113,
+          "effort_per_success_seconds": 1.2356376710082113,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 44.93754570894366,
+          "mean_effort_seconds": 4.493754570894366,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 12.356376710082113,
+          "mean_effort_seconds": 1.2356376710082113,
+          "effort_per_success_seconds": 1.2356376710082113,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 44.93754570894366,
+          "mean_effort_seconds": 4.493754570894366,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 12.356376710082113,
+          "mean_effort_seconds": 1.2356376710082113,
+          "effort_per_success_seconds": 1.2356376710082113,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 12.356376710082113,
+          "mean_effort_seconds": 1.2356376710082113,
+          "effort_per_success_seconds": 1.2356376710082113,
+          "mean_model_calls": 1.0
+        }
+      }
+    },
+    "region_net": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 26.32979653993402,
+          "mean_effort_seconds": 2.632979653993402,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 54.0065620430577,
+          "mean_effort_seconds": 5.40065620430577,
+          "effort_per_success_seconds": 5.40065620430577,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 26.32979653993402,
+          "mean_effort_seconds": 2.632979653993402,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 54.0065620430577,
+          "mean_effort_seconds": 5.40065620430577,
+          "effort_per_success_seconds": 5.40065620430577,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 54.0065620430577,
+          "mean_effort_seconds": 5.40065620430577,
+          "effort_per_success_seconds": 5.40065620430577,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 80.33635858299172,
+          "mean_effort_seconds": 8.033635858299172,
+          "effort_per_success_seconds": 8.033635858299172,
+          "mean_model_calls": 2.0
+        }
+      }
+    },
+    "region_total": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 17.382431286958845,
+          "mean_effort_seconds": 1.7382431286958844,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 84.02673699994693,
+          "mean_effort_seconds": 8.402673699994693,
+          "effort_per_success_seconds": 8.402673699994693,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 0,
+          "success_rate": 0.0,
+          "total_effort_seconds": 17.382431286958845,
+          "mean_effort_seconds": 1.7382431286958844,
+          "effort_per_success_seconds": null,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 84.02673699994693,
+          "mean_effort_seconds": 8.402673699994693,
+          "effort_per_success_seconds": 8.402673699994693,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 84.02673699994693,
+          "mean_effort_seconds": 8.402673699994693,
+          "effort_per_success_seconds": 8.402673699994693,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 101.40916828690578,
+          "mean_effort_seconds": 10.140916828690578,
+          "effort_per_success_seconds": 10.140916828690578,
+          "mean_model_calls": 2.0
+        }
+      }
+    },
+    "summary": {
+      "models": {
+        "qwen3:1.7b": {
+          "runs": 10,
+          "successes": 3,
+          "success_rate": 0.3,
+          "total_effort_seconds": 14.331119418019865,
+          "mean_effort_seconds": 1.4331119418019864,
+          "effort_per_success_seconds": 4.777039806006622,
+          "mean_model_calls": 1.0
+        },
+        "qwen3:4b-q4_K_M": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 48.82681766394205,
+          "mean_effort_seconds": 4.882681766394205,
+          "effort_per_success_seconds": 4.882681766394205,
+          "mean_model_calls": 1.0
+        }
+      },
+      "policies": {
+        "always_small": {
+          "runs": 10,
+          "successes": 3,
+          "success_rate": 0.3,
+          "total_effort_seconds": 14.331119418019865,
+          "mean_effort_seconds": 1.4331119418019864,
+          "effort_per_success_seconds": 4.777039806006622,
+          "mean_model_calls": 1.0
+        },
+        "always_large": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 48.82681766394205,
+          "mean_effort_seconds": 4.882681766394205,
+          "effort_per_success_seconds": 4.882681766394205,
+          "mean_model_calls": 1.0
+        },
+        "oracle_pre_routing": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 37.222903163996136,
+          "mean_effort_seconds": 3.7222903163996137,
+          "effort_per_success_seconds": 3.7222903163996137,
+          "mean_model_calls": 1.0
+        },
+        "small_first_perfect_detector": {
+          "runs": 10,
+          "successes": 10,
+          "success_rate": 1.0,
+          "total_effort_seconds": 48.11997654098091,
+          "mean_effort_seconds": 4.811997654098091,
+          "effort_per_success_seconds": 4.811997654098091,
+          "mean_model_calls": 1.7
+        }
+      }
+    }
+  },
+  "profile_path": "/Users/puneetdevnani/Desktop/Dissertation/results/v2/headroom/qwen3-17-4q4/profile.jsonl",
+  "profile_sha256": "dbeb5160fc20c018cad49d79b514976454520cc4b160fd78c469b454fcc5da43",
+  "profile_dataset_sha256": "2786a9b8bba31ad386885d1d97d6cafc5f9b5705bafb09493550a3d2161ca456",
+  "active_dataset_sha256": "01d13b1e9016e64c471d5f2d5ed0898c88ec0e42fc8fa65c30606bfe159c7e9d",
+  "historical_profile": true,
+  "source_sha256": "2ef33123aad23b2e318e95ddb72641a2f844ddb6980e415bed977910083a5639"
+}

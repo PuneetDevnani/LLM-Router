@@ -1,0 +1,98 @@
+[
+  {
+    "id": "routellm",
+    "url": "https://arxiv.org/pdf/2406.18665",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/routellm.pdf",
+    "pages": 16,
+    "sha256": "c9bc9c8171cab95bb3832cde8767c6b5e0925cd62930e51ddbd60d7cb2616741"
+  },
+  {
+    "id": "frugalgpt",
+    "url": "https://arxiv.org/pdf/2305.05176",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/frugalgpt.pdf",
+    "pages": 13,
+    "sha256": "035ae8b90333dad8b7817fc8f55e7c4cbca435368c5c1a4dbf7bba9e5db87473"
+  },
+  {
+    "id": "automix",
+    "url": "https://arxiv.org/pdf/2310.12963v4",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/automix.pdf",
+    "pages": 28,
+    "sha256": "a24ff9d63e5c08000eec8721cdffee3434abd1a5cd604ddccf9b5494c0249593"
+  },
+  {
+    "id": "agentrouter",
+    "url": "https://arxiv.org/pdf/2609.22951v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/agentrouter.pdf",
+    "pages": 6,
+    "sha256": "bc8e71dbfc94152d3d9e7bb5c7ad3726edde23bad985959a766eaa23427e37f5"
+  },
+  {
+    "id": "baar",
+    "url": "https://arxiv.org/pdf/2602.21227v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/baar.pdf",
+    "pages": 16,
+    "sha256": "b2983f5648052e36a6d3a7f2bf941d976ebc250ae2de34d9e56f23a9451af877"
+  },
+  {
+    "id": "self_healing",
+    "url": "https://arxiv.org/pdf/2603.01548v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/self_healing.pdf",
+    "pages": 29,
+    "sha256": "0743c37a63145a7f4bc57aaae9dcb9831d9c9cbe9baf1820c148454ecc76aff6"
+  },
+  {
+    "id": "agentcodec",
+    "url": "https://arxiv.org/pdf/2605.09121v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/agentcodec.pdf",
+    "pages": 59,
+    "sha256": "6a725545b74cb1abcfc4de79c6c5af6043a5b10758d1d8e01d19aae744476f9c"
+  },
+  {
+    "id": "racer",
+    "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/hao26c/hao26c.pdf",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/racer.pdf",
+    "pages": 26,
+    "sha256": "3cdb79a669885475ac3c8740598f28d9fb7f4b0847d4e47c8aa0c8ba0afb22a1"
+  },
+  {
+    "id": "xrouter",
+    "url": "https://arxiv.org/pdf/2510.08439v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/xrouter.pdf",
+    "pages": 24,
+    "sha256": "f652c9272c932e3a100448b86fae5e3d1762f69e712b4af6bf95c4a3dbd2b92d"
+  },
+  {
+    "id": "sqlhd",
+    "url": "https://arxiv.org/pdf/2512.22250v1",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/sqlhd.pdf",
+    "pages": 20,
+    "sha256": "74199dd88de40dbf63dc1be21d7785e40165fab869a8437b7e50db3fbfbf7fc9"
+  },
+  {
+    "id": "progress_recovery",
+    "url": "https://arxiv.org/pdf/2511.14584v4",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/progress_recovery.pdf",
+    "pages": 18,
+    "sha256": "9856e3e0ce9c8cb700ebeb3914c60c90be87b076b7988361a2923022db347da3"
+  },
+  {
+    "id": "mrsqlgen",
+    "url": "https://matafeiyanll.github.io/paper/FSE26-MRSQLGen.pdf",
+    "downloaded_on": "2026-10-12",
+    "local_pdf": "literature/sources/mrsqlgen.pdf",
+    "pages": 23,
+    "sha256": "0e7ac694b412817cd230ddc2d2ecc8574d6eaebc65eeaa0f58d15a546f71f288"
+  }
+]
